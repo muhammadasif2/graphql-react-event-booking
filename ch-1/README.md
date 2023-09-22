@@ -4,4 +4,4 @@ Graphql is a query language that is an alternative to API that is used to get an
 
 **React Project on Event booking**
 
-This is react react-based event booking project where users logedin or register, and perform events for booking like crud functions for booking and canceling events.
+This is react based event booking project where users logedin or register, and perform events for booking like crud functions for booking and canceling events.
