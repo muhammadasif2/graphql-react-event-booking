@@ -9,3 +9,4 @@ This is react based event booking project where users login or register, and per
 **Whats being used**
 `graphql`
 `express-graphql`
+`npm install mongoose --save`
