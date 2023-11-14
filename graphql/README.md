@@ -38,7 +38,11 @@ const eventSchema = new Schema({
 });
 module.exports = mongoose.model("Event", eventSchema);
 `
+
+
 **How to connect DB with mongoose**
+
+
 `mongoose
   .connect(
     `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.y2lwxgj.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`
@@ -49,7 +53,10 @@ module.exports = mongoose.model("Event", eventSchema);
   .catch((error) => {
     console.log("errors", error);
   });`
+
+  
 **Type Mutation**
+
 ` type RootMutation {
       createEvent(inputEvent:EventInput) : Event
       createUser(inputUser:InputUser) : User
@@ -75,7 +82,9 @@ date: new Date(args.inputEvent.date),
         return event;
       },`
 
+
 **Schema**
+
 ` schema {
 query: RootQuery
 mutation: RootMutation
